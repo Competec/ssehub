@@ -17,11 +17,6 @@
     "password": "guest",
     "exchange": "amq.fanout"
   },
-  "redis": {
-    "host": "127.0.0.1",
-    "prefix": "ssehub",
-    "port": 6379
-  },
   "leveldb": {
     "storageDir": "/tmp"
   },
@@ -41,15 +36,18 @@
   },
   "channels": [
     {
-        "path": "test",
-        "allowedOrigins": ["https://some.host"]
-    },
-    {
-        "path": "test2",
-        "cacheAdapter": "memory",
-        "restrictPublish": [
-         "10.0.0.0/8"
-        ]
+      "path": "deal-availability",
+      "allowedOrigins":  [
+        "http://localhost:8000",
+        "https://daydeal.ch",
+        "https://www.daydeal.ch",
+        "https://stage-daydeal.competec.pl",
+        "https://www.stage-daydeal.competec.pl"
+      ],
+      "restrictPublish": [
+        "172.17.0.0/8",
+        "10.0.0.0/8"
+      ]
     }
   ]
 }
