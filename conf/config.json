@@ -3,7 +3,7 @@
     "port": 8080,
     "bind-ip": "0.0.0.0",
     "logdir": "./",
-    "pingInterval": 5,
+    "pingInterval": 10,
     "pingEvent": true,
     "threadsPerChannel": 2,
     "allowUndefinedChannels": true,
