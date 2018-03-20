@@ -5,7 +5,7 @@
     "logdir": "./",
     "pingInterval": 10,
     "pingEvent": true,
-    "threadsPerChannel": 2,
+    "threadsPerChannel": 4,
     "allowUndefinedChannels": true,
     "enablePost": true
   },
